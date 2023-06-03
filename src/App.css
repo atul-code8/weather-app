@@ -1,0 +1,25 @@
+.preloader {
+  width: 100%;
+  height: 100vh;
+  background: url(./assets/Sunny.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: loader;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+    background-image: url(./assets/Lightning.gif);
+  }
+  45% {
+    background-image: url(./assets/Raining.gif);
+  }
+  70% {
+    background-image: url(./assets/Winter.gif);
+  }
+  100% {
+    background-image: url(./assets/Sunny.gif);
+  }
+}
