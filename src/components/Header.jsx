@@ -7,7 +7,7 @@ const Header = () => {
   const [apiData, setApiData] = useState();
 
   const fetchData = async (city) => {
-    const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${
       import.meta.env.VITE_API_KEY
     }&q=${city}&days=7`;
     const res = await fetch(apiUrl);
