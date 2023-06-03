@@ -13,7 +13,9 @@ const Header = () => {
     const res = await fetch(apiUrl);
 
     if (!res.ok) {
-      alert("No matching location found. Please fill the correct data in the field!");
+      alert(
+        "No matching location found. Please fill the correct data in the field!"
+      );
     } else {
       const data = await res.json();
       setApiData(data);
